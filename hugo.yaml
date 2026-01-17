@@ -1,4 +1,4 @@
-baseURL: "https://username.github.io/"
+baseURL: "https://eesungkim.github.io/"
 title: "Dev Log"
 theme: "PaperMod"
 paginate: 10
@@ -39,7 +39,7 @@ languages:
     params:
       homeInfoParams:
         Title: "Dev Log"
-        Content: "Notes on experiments, system design, and troubleshooting."
+        Content: "Notes on experiments, system design, and troubleshooting. "
     menu:
       main:
         - identifier: posts
