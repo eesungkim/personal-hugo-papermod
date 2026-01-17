@@ -1,0 +1,77 @@
+baseURL: "https://username.github.io/"
+title: "Dev Log"
+theme: "PaperMod"
+paginate: 10
+
+enableRobotsTXT: true
+
+defaultContentLanguage: ko
+defaultContentLanguageInSubdir: false
+
+languages:
+  ko:
+    languageName: "한국어"
+    weight: 1
+    contentDir: "content/ko"
+    params:
+      homeInfoParams:
+        Title: "개발 일지"
+        Content: "실험, 시스템 설계, 트러블슈팅을 기록합니다."
+    menu:
+      main:
+        - identifier: posts
+          name: "글"
+          url: "/posts/"
+          weight: 10
+        - identifier: tags
+          name: "태그"
+          url: "/tags/"
+          weight: 20
+        - identifier: about
+          name: "소개"
+          url: "/about/"
+          weight: 30
+
+  en:
+    languageName: "English"
+    weight: 2
+    contentDir: "content/en"
+    params:
+      homeInfoParams:
+        Title: "Dev Log"
+        Content: "Notes on experiments, system design, and troubleshooting."
+    menu:
+      main:
+        - identifier: posts
+          name: "Posts"
+          url: "/en/posts/"
+          weight: 10
+        - identifier: tags
+          name: "Tags"
+          url: "/en/tags/"
+          weight: 20
+        - identifier: about
+          name: "About"
+          url: "/en/about/"
+          weight: 30
+
+params:
+  env: production
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+taxonomies:
+  tag: "tags"
+  category: "categories"
